@@ -1,0 +1,24 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: todo-frontend
+  labels:
+    name: deployment
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      name: todo-frontend-pod
+  template:
+    metadata:
+      name: todo-frontend-pod
+      labels:
+        name: todo-frontend-pod
+    spec:
+      containers:
+      - name: todo-frontend-container
+        image: "{{ .Values.image }}"
+        imagePullPolicy: IfNotPresent
+        ports:
+        - containerPort: 80
+

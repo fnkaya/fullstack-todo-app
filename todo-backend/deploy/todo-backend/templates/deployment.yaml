@@ -1,0 +1,23 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: todo-backend
+  labels:
+    name: deployment
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      name: todo-backend-pod
+  template:
+    metadata:
+      name: todo-backend-pod
+      labels:
+        name: todo-backend-pod
+    spec:
+      containers:
+      - name: todo-backend-container
+        image: "{{ .Values.image }}"
+        imagePullPolicy: IfNotPresent
+        ports:
+        - containerPort: 9000

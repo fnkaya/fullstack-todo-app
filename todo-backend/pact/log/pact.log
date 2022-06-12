@@ -1,0 +1,67 @@
+# Logfile created on 2022-02-24 03:05:16 +0300 by logger.rb/47272
+I, [2022-02-24T03:05:16.330791 #37105]  INFO -- : Running example 'Verifying a pact between todos-fe and todos-be Given fetch todos successfully not empty todo list with GET /api/todos returns a response which has status code 200'
+I, [2022-02-24T03:05:16.331160 #37105]  INFO -- : Sending GET request to path: "/api/todos" with headers: {"X_PACT_PROVIDER_STATES"=>[{"name"=>"fetch todos successfully"}]}, see debug logs for body
+D, [2022-02-24T03:05:16.331182 #37105] DEBUG -- : body :
+I, [2022-02-24T03:05:16.345306 #37105]  INFO -- : Received response with status: 200, headers: {"Content-Length"=>"2", "Content-Type"=>"application/json; charset=UTF-8", "Date"=>"Thu, 24 Feb 2022 00:05:16 GMT"}, see debug logs for body
+D, [2022-02-24T03:05:16.345359 #37105] DEBUG -- : body: []
+I, [2022-02-24T03:13:24.020135 #37213]  INFO -- : Running example 'Verifying a pact between todos-fe and todos-be Given fetch todos successfully not empty todo list with GET /api/todos returns a response which has status code 200'
+I, [2022-02-24T03:13:24.021397 #37213]  INFO -- : Sending GET request to path: "/api/todos" with headers: {"X_PACT_PROVIDER_STATES"=>[{"name"=>"fetch todos successfully"}]}, see debug logs for body
+D, [2022-02-24T03:13:24.021430 #37213] DEBUG -- : body :
+I, [2022-02-24T03:13:24.034034 #37213]  INFO -- : Received response with status: 200, headers: {"Content-Length"=>"2", "Content-Type"=>"application/json; charset=UTF-8", "Date"=>"Thu, 24 Feb 2022 00:13:24 GMT"}, see debug logs for body
+D, [2022-02-24T03:13:24.034097 #37213] DEBUG -- : body: []
+I, [2022-02-24T03:14:12.788334 #37275]  INFO -- : Running example 'Verifying a pact between todos-fe and todos-be Given fetch todos successfully not empty todo list with GET /api/todos returns a response which has status code 200'
+I, [2022-02-24T03:14:12.789346 #37275]  INFO -- : Sending GET request to path: "/api/todos" with headers: {"X_PACT_PROVIDER_STATES"=>[{"name"=>"fetch todos successfully"}]}, see debug logs for body
+D, [2022-02-24T03:14:12.789367 #37275] DEBUG -- : body :
+I, [2022-02-24T03:14:12.800619 #37275]  INFO -- : Received response with status: 200, headers: {"Content-Length"=>"2", "Content-Type"=>"application/json; charset=UTF-8", "Date"=>"Thu, 24 Feb 2022 00:14:12 GMT"}, see debug logs for body
+D, [2022-02-24T03:14:12.800683 #37275] DEBUG -- : body: []
+I, [2022-02-24T18:24:21.678240 #4530]  INFO -- : Running example 'Verifying a pact between todos-fe and todos-be Given fetch todos successfully not empty todo list with GET /api/todos returns a response which has status code 200'
+I, [2022-02-24T18:24:21.679738 #4530]  INFO -- : Sending GET request to path: "/api/todos" with headers: {"X_PACT_PROVIDER_STATES"=>[{"name"=>"fetch todos successfully"}]}, see debug logs for body
+D, [2022-02-24T18:24:21.679765 #4530] DEBUG -- : body :
+I, [2022-02-24T18:24:21.691153 #4530]  INFO -- : Received response with status: 200, headers: {"Content-Length"=>"2", "Content-Type"=>"application/json; charset=UTF-8", "Date"=>"Thu, 24 Feb 2022 15:24:21 GMT"}, see debug logs for body
+D, [2022-02-24T18:24:21.691197 #4530] DEBUG -- : body: []
+I, [2022-02-24T18:28:03.001907 #4680]  INFO -- : Running example 'Verifying a pact between todos-fe and todos-be Given fetch todos successfully not empty todo list with GET /api/todos returns a response which has status code 200'
+I, [2022-02-24T18:28:03.002891 #4680]  INFO -- : Sending GET request to path: "/api/todos" with headers: {"X_PACT_PROVIDER_STATES"=>[{"name"=>"fetch todos successfully"}]}, see debug logs for body
+D, [2022-02-24T18:28:03.002911 #4680] DEBUG -- : body :
+I, [2022-02-24T18:28:03.013874 #4680]  INFO -- : Received response with status: 200, headers: {"Content-Length"=>"2", "Content-Type"=>"application/json; charset=UTF-8", "Date"=>"Thu, 24 Feb 2022 15:28:03 GMT"}, see debug logs for body
+D, [2022-02-24T18:28:03.013925 #4680] DEBUG -- : body: []
+I, [2022-02-24T18:29:09.660808 #4729]  INFO -- : Running example 'Verifying a pact between todos-fe and todos-be Given fetch todos successfully not empty todo list with GET /api/todos returns a response which has status code 200'
+I, [2022-02-24T18:29:09.661788 #4729]  INFO -- : Sending GET request to path: "/api/todos" with headers: {"X_PACT_PROVIDER_STATES"=>[{"name"=>"fetch todos successfully"}]}, see debug logs for body
+D, [2022-02-24T18:29:09.661808 #4729] DEBUG -- : body :
+I, [2022-02-24T18:29:09.672624 #4729]  INFO -- : Received response with status: 404, headers: {"Content-Length"=>"19", "Content-Type"=>"text/plain; charset=utf-8", "Date"=>"Thu, 24 Feb 2022 15:29:09 GMT", "X-Content-Type-Options"=>"nosniff"}, see debug logs for body
+D, [2022-02-24T18:29:09.672664 #4729] DEBUG -- : body: 404 page not found
+
+I, [2022-02-24T18:29:23.433343 #4773]  INFO -- : Running example 'Verifying a pact between todos-fe and todos-be Given fetch todos successfully not empty todo list with GET /api/todos returns a response which has status code 200'
+I, [2022-02-24T18:29:23.434163 #4773]  INFO -- : Sending GET request to path: "/api/todos" with headers: {"X_PACT_PROVIDER_STATES"=>[{"name"=>"fetch todos successfully"}]}, see debug logs for body
+D, [2022-02-24T18:29:23.434183 #4773] DEBUG -- : body :
+I, [2022-02-24T18:29:23.444643 #4773]  INFO -- : Received response with status: 200, headers: {"Content-Length"=>"2", "Content-Type"=>"application/json; charset=UTF-8", "Date"=>"Thu, 24 Feb 2022 15:29:23 GMT"}, see debug logs for body
+D, [2022-02-24T18:29:23.444681 #4773] DEBUG -- : body: []
+I, [2022-02-24T18:31:36.831770 #4833]  INFO -- : Running example 'Verifying a pact between todos-fe and todos-be Given fetch todos successfully not empty todo list with GET /api/todos returns a response which has status code 200'
+I, [2022-02-24T18:31:36.832766 #4833]  INFO -- : Sending GET request to path: "/api/todos" with headers: {"X_PACT_PROVIDER_STATES"=>[{"name"=>"fetch todos successfully"}]}, see debug logs for body
+D, [2022-02-24T18:31:36.832793 #4833] DEBUG -- : body :
+I, [2022-02-24T18:31:36.843531 #4833]  INFO -- : Received response with status: 200, headers: {"Content-Length"=>"42", "Content-Type"=>"application/json; charset=UTF-8", "Date"=>"Thu, 24 Feb 2022 15:31:36 GMT"}, see debug logs for body
+D, [2022-02-24T18:31:36.843570 #4833] DEBUG -- : body: [{"id":1,"text":"todo text","done":false}]
+I, [2022-02-24T19:39:42.064734 #5246]  INFO -- : Running example 'Verifying a pact between todos-fe and todos-be Given fetch todos successfully not empty todo list with GET /api/todos returns a response which has status code 200'
+I, [2022-02-24T19:39:42.065774 #5246]  INFO -- : Sending GET request to path: "/api/todos" with headers: {"X_PACT_PROVIDER_STATES"=>[{"name"=>"fetch todos successfully"}]}, see debug logs for body
+D, [2022-02-24T19:39:42.065795 #5246] DEBUG -- : body :
+I, [2022-02-24T19:39:42.076572 #5246]  INFO -- : Received response with status: 200, headers: {"Content-Length"=>"38", "Content-Type"=>"application/json; charset=UTF-8", "Date"=>"Thu, 24 Feb 2022 16:39:42 GMT"}, see debug logs for body
+D, [2022-02-24T19:39:42.076625 #5246] DEBUG -- : body: [{"id":1,"text":"todo-1","done":true}]
+I, [2022-02-26T18:13:57.036708 #21967]  INFO -- : Running example 'Verifying a pact between todos-fe and todos-be Given fetch todos successfully not empty todo list with GET /api/todos returns a response which has status code 200'
+I, [2022-02-26T18:13:57.037914 #21967]  INFO -- : Sending GET request to path: "/api/todos" with headers: {"X_PACT_PROVIDER_STATES"=>[{"name"=>"fetch todos successfully"}]}, see debug logs for body
+D, [2022-02-26T18:13:57.037936 #21967] DEBUG -- : body :
+I, [2022-02-26T18:13:57.048538 #21967]  INFO -- : Received response with status: 200, headers: {"Content-Length"=>"38", "Content-Type"=>"application/json; charset=UTF-8", "Date"=>"Sat, 26 Feb 2022 15:13:57 GMT"}, see debug logs for body
+D, [2022-02-26T18:13:57.048582 #21967] DEBUG -- : body: [{"id":1,"text":"todo-1","done":true}]
+I, [2022-02-26T18:14:25.251362 #22123]  INFO -- : Running example 'Verifying a pact between todos-fe and todos-be Given fetch todos successfully not empty todo list with GET /api/todos returns a response which has status code 200'
+I, [2022-02-26T18:14:25.252323 #22123]  INFO -- : Sending GET request to path: "/api/todos" with headers: {"X_PACT_PROVIDER_STATES"=>[{"name"=>"fetch todos successfully"}]}, see debug logs for body
+D, [2022-02-26T18:14:25.252343 #22123] DEBUG -- : body :
+I, [2022-02-26T18:14:25.262703 #22123]  INFO -- : Received response with status: 200, headers: {"Content-Length"=>"38", "Content-Type"=>"application/json; charset=UTF-8", "Date"=>"Sat, 26 Feb 2022 15:14:25 GMT"}, see debug logs for body
+D, [2022-02-26T18:14:25.262743 #22123] DEBUG -- : body: [{"id":1,"text":"todo-1","done":true}]
+I, [2022-02-27T00:25:41.699638 #26191]  INFO -- : Running example 'Verifying a pact between todos-fe and todos-be Given fetch todos successfully not empty todo list with GET /api/todos returns a response which has status code 200'
+I, [2022-02-27T00:25:41.701601 #26191]  INFO -- : Sending GET request to path: "/api/todos" with headers: {"X_PACT_PROVIDER_STATES"=>[{"name"=>"fetch todos successfully"}]}, see debug logs for body
+D, [2022-02-27T00:25:41.701634 #26191] DEBUG -- : body :
+I, [2022-02-27T00:25:41.718178 #26191]  INFO -- : Received response with status: 200, headers: {"Content-Length"=>"38", "Content-Type"=>"application/json; charset=UTF-8", "Date"=>"Sat, 26 Feb 2022 21:25:41 GMT"}, see debug logs for body
+D, [2022-02-27T00:25:41.718300 #26191] DEBUG -- : body: [{"id":1,"text":"todo-1","done":true}]
+I, [2022-02-27T00:35:22.759898 #26464]  INFO -- : Running example 'Verifying a pact between todos-fe and todos-be Given fetch todos successfully not empty todo list with GET /api/todos returns a response which has status code 200'
+I, [2022-02-27T00:35:22.761799 #26464]  INFO -- : Sending GET request to path: "/api/todos" with headers: {"X_PACT_PROVIDER_STATES"=>[{"name"=>"fetch todos successfully"}]}, see debug logs for body
+D, [2022-02-27T00:35:22.761842 #26464] DEBUG -- : body :
+I, [2022-02-27T00:35:22.779265 #26464]  INFO -- : Received response with status: 200, headers: {"Content-Length"=>"38", "Content-Type"=>"application/json; charset=UTF-8", "Date"=>"Sat, 26 Feb 2022 21:35:22 GMT"}, see debug logs for body
+D, [2022-02-27T00:35:22.779319 #26464] DEBUG -- : body: [{"id":1,"text":"todo-1","done":true}]

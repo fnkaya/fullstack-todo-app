@@ -1,0 +1,2 @@
+image: "fnkaya/todo-http-server:latest"
+nodePort: 30001

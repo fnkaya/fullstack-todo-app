@@ -1,0 +1,2 @@
+image: fnkaya/todo-ui:latest
+nodePort: 30101

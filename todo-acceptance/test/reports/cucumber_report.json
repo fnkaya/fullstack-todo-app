@@ -1,0 +1,83 @@
+[
+  {
+    "keyword": "Feature",
+    "name": "Add To ToDo List",
+    "line": 1,
+    "id": "add-to-todo-list",
+    "tags": [],
+    "uri": "features/add-todo.feature",
+    "elements": [
+      {
+        "id": "add-to-todo-list;todo-item-should-insert-when-user-click-add-button",
+        "keyword": "Scenario",
+        "line": 3,
+        "name": "ToDo item should insert when user click add button",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "match": {
+              "location": "features/support/config.js:56"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 762000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 4,
+            "name": "Empty ToDo list",
+            "match": {
+              "location": "features/steps/add-todo.js:7"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 929000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 5,
+            "name": "I write \"but some milk\" to text box and click to add button",
+            "match": {
+              "location": "features/steps/add-todo.js:12"
+            },
+            "result": {
+              "status": "failed",
+              "duration": 5011000000,
+              "error_message": "TimeoutError: waiting for selector `#todo-input` failed: timeout 5000ms exceeded\n    at new WaitTask (/Users/fnkaya/Projects/todo/acceptance/node_modules/puppeteer/lib/cjs/puppeteer/common/DOMWorld.js:526:34)\n    at DOMWorld.waitForSelectorInPage (/Users/fnkaya/Projects/todo/acceptance/node_modules/puppeteer/lib/cjs/puppeteer/common/DOMWorld.js:430:26)\n    at Object.internalHandler.waitFor (/Users/fnkaya/Projects/todo/acceptance/node_modules/puppeteer/lib/cjs/puppeteer/common/QueryHandler.js:31:77)\n    at DOMWorld.waitForSelector (/Users/fnkaya/Projects/todo/acceptance/node_modules/puppeteer/lib/cjs/puppeteer/common/DOMWorld.js:321:29)\n    at Frame.waitForSelector (/Users/fnkaya/Projects/todo/acceptance/node_modules/puppeteer/lib/cjs/puppeteer/common/FrameManager.js:925:51)\n    at Page.waitForSelector (/Users/fnkaya/Projects/todo/acceptance/node_modules/puppeteer/lib/cjs/puppeteer/common/Page.js:2359:33)\n    at BrowserScope.module.exports (/Users/fnkaya/Projects/todo/acceptance/features/support/action/waitForSelector.js:9:21)\n    at BrowserScope.<anonymous> (/Users/fnkaya/Projects/todo/acceptance/features/steps/add-todo.js:15:27)"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 6,
+            "name": "I should see \"buy some milk\" item in ToDo list",
+            "match": {
+              "location": "features/steps/add-todo.js:21"
+            },
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "match": {
+              "location": "features/support/config.js:68"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 158000000
+            }
+          }
+        ]
+      }
+    ]
+  }
+]

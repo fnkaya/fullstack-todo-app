@@ -1,0 +1,53 @@
+{
+  "consumer": {
+    "name": "todos-fe"
+  },
+  "provider": {
+    "name": "todos-be"
+  },
+  "interactions": [
+    {
+      "description": "not empty todo list",
+      "providerState": "fetch todos successfully",
+      "request": {
+        "method": "GET",
+        "path": "/api/todos"
+      },
+      "response": {
+        "status": 200,
+        "headers": {
+          "Content-Type": "application/json; charset=UTF-8"
+        },
+        "body": [
+          {
+            "id": 1,
+            "text": "todo text",
+            "done": false
+          }
+        ],
+        "matchingRules": {
+          "$.body": {
+            "min": 1
+          },
+          "$.body[*].*": {
+            "match": "type"
+          },
+          "$.body[*].id": {
+            "match": "type"
+          },
+          "$.body[*].text": {
+            "match": "type"
+          },
+          "$.body[*].done": {
+            "match": "type"
+          }
+        }
+      }
+    }
+  ],
+  "metadata": {
+    "pactSpecification": {
+      "version": "2.0.0"
+    }
+  }
+}

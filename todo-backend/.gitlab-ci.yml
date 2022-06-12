@@ -1,0 +1,60 @@
+image: golang:latest
+
+variables:
+  REPO_NAME: gitlab.com/fnkaya/todo-backend
+
+stages:
+  - build
+  - test
+  - register
+  - deploy
+
+build:
+  stage: build
+  before_script:
+    - mkdir -p $GOPATH/src/$(dirname $REPO_NAME)
+    - ln -svf $CI_PROJECT_DIR $GOPATH/src/$REPO_NAME
+    - cd $GOPATH/src/$REPO_NAME
+  script:  
+    - go build -race -ldflags "-extldflags '-static'" -o $CI_PROJECT_DIR/app
+  artifacts:  
+    paths:  
+      - app
+
+test:
+  stage: test
+  before_script:  
+    - mkdir -p $GOPATH/src/$(dirname $REPO_NAME)
+    - ln -svf $CI_PROJECT_DIR $GOPATH/src/$REPO_NAME
+    - cd $GOPATH/src/$REPO_NAME
+    - curl -LO https://github.com/pact-foundation/pact-ruby-standalone/releases/download/v1.88.82/pact-1.88.82-linux-x86_64.tar.gz
+    - tar xzf pact-1.88.82-linux-x86_64.tar.gz
+    - mv ./pact/bin/* /usr/local/bin/
+    - mv ./pact/lib/* /usr/local/lib/
+  script:  
+    - go fmt $(go list ./... | grep -v /vendor/)  
+    - go vet $(go list ./... | grep -v /vendor/)  
+    - go test -race $(go list ./... | grep -v /vendor/)
+
+register:
+  stage: register
+  image: docker
+  services:
+    - docker:dind
+  before_script:
+    - docker login -u $DOCKER_USERNAME -p $DOCKER_PASSWORD
+  script: 
+    - docker build -t "${DOCKER_USERNAME}/todo-http-server:${CI_COMMIT_SHORT_SHA}" .
+    - docker push "${DOCKER_USERNAME}/todo-http-server:${CI_COMMIT_SHORT_SHA}"
+
+deploy:
+  stage: deploy
+  image: 
+    name: alpine/helm:3.2.1
+    entrypoint: [""]
+  script:
+    - echo ${KUBE_CONFIG} | base64 -d > config
+    - export KUBECONFIG=config
+    - helm repo add todo-app https://fnkaya.github.io/chart-museum/
+    - helm repo update
+    - helm upgrade --install todo-backend todo-app/todo-backend --version 0.6.0 --set image=fnkaya/todo-http-server:${CI_COMMIT_SHORT_SHA} --set nodePort=30005  --namespace test
